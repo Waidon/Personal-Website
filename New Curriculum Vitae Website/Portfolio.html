@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waidon Cloete's Personal Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="brand">
+          <a href="#">Waidon Cloete</a>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./About.html">About</a>
+          <a href="./Portfolio.html">Portfolio</a>
+          <a href="./Contact.html">Contact</a>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+<!--Porfolio-->
+<section class="portfolio">
+  <div class="container">
+      <h1>Portfolio</h1>
+      <div class="underline"></div>
+      <p class="intro-text">
+          Welcome to my portfolio! Here, you’ll find a showcase of my work and experience in building websites, creating graphics, responsive web design, photography, photo editing, customer support, technical support, and t-shirt design.
+      </p>
+      <div class="portfolio-grid">
+          <div class="portfolio-item">
+              <img src="./Images/Web Design.jpg" alt="Website Design">
+              <h2>Website Design</h2>
+              <p>Creating modern, responsive, and user-friendly websites tailored to client needs.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Graphic Design.jpg" alt="Graphics Design">
+              <h2>Graphics Design</h2>
+              <p>Designing creative visuals, branding elements, and digital illustrations.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Responsive Web Design.jpg" alt="Responsive Web Design">
+              <h2>Responsive Web Design</h2>
+              <p>Building websites that look and work seamlessly across all devices.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Photography.jpg" alt="Photography">
+              <h2>Photography</h2>
+              <p>Capturing moments with an eye for detail and creative composition.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Photo Editing.jpg" alt="Photo Editing">
+              <h2>Photo Editing</h2>
+              <p>Enhancing and retouching images to achieve stunning results.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Customer Support.jpg" alt="Customer Support">
+              <h2>Customer Support</h2>
+              <p>Providing excellent customer service with a focus on satisfaction and problem-solving.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/Technical Support.jpg" alt="Technical Support">
+              <h2>Technical Support</h2>
+              <p>Diagnosing and resolving technical issues with efficiency and accuracy.</p>
+          </div>
+          <div class="portfolio-item">
+              <img src="./Images/T-shirt Design.jpg" alt="T-Shirt Design">
+              <h2>T-Shirt Design</h2>
+              <p>Creating unique and trendy t-shirt designs with a personal touch.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+   <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact Me</h3>
+        <p><strong>Phone: <br></strong>073 357 2537</p>
+        <p>
+          <strong>Email:</strong>
+          <br>
+          <a>waidonj11@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-social">
+        <h3>Connect with Me</h3>
+
+        <a href="https://www.linkedin.com/in/waidon-cloete/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Waidon" target="_blank">GitHub</a>
+      </div>
+      <div class="footer-image">
+        <img src="placeholder-image.jpg" alt="Placeholder Image" />
+      </div>
+    </div>
+  </footer>
+  
+      <script src="script.js"></script>
+      <script>
+        // This script is for the smooth scrolling effect in the slider.
+        document.querySelectorAll(".slider").forEach((slider) => {
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+  
+          slider.addEventListener("mousedown", (e) => {
+            isDown = true;
+            slider.classList.add("active");
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+          });
+  
+          slider.addEventListener("mouseleave", () => {
+            isDown = false;
+            slider.classList.remove("active");
+          });
+  
+          slider.addEventListener("mouseup", () => {
+            isDown = false;
+            slider.classList.remove("active");
+          });
+  
+          slider.addEventListener("mousemove", (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+          });
+        });
+  
+        // Toggle mobile menu
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+  
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          menuToggle.classList.toggle("active");
+        });
+      </script>
+    </body>
+  </html>
+  
+
+   
