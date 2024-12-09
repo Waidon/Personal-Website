@@ -405,7 +405,7 @@ body {
 }
 
 .about-image img {
-    border-radius: 10px;
+    border-radius: 100px;
     max-width: 100%;
     height: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -534,7 +534,7 @@ h1 {
 
 .about-me-image img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 60px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
