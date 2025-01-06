@@ -34,8 +34,8 @@
       </div>
     </nav>
  
-    <!-- Contact Me Section -->
-    <section class="contact-section">
+      <!-- Contact Me Section -->
+      <section class="contact-section">
         <h1>Contact Me</h1>
         <div class="contact-container">
 
@@ -79,77 +79,80 @@
         </div>
     </section>
 
-</body>
-</html>
+     <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact Me</h3>
+        <p><strong>Phone: <br></strong>073 357 2537</p>
+        <p>
+          <strong>Email:</strong>
+          <br>
+          <a>waidonj11@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-social">
+        <h3>Connect with Me</h3>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-contact">
-            <h3>Contact Me</h3>
-            <p><strong>Phone: <br></strong>073 357 2537</p>
-            <p>
-              <strong>Email:</strong>
-              <br>
-              <a href="mailto:example@example.com">waidonj11@gmail.com</a>
-            </p>
-          </div>
-          <div class="footer-social">
-            <h3>Connect with Me</h3>
+        <a href="https://www.linkedin.com/in/waidon-cloete/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Waidon" target="_blank">GitHub</a>
+      </div>
+      <div class="footer-image">
+        <img src="./Images/Logo.png" alt="Placeholder Image" />
+      </div>
+    </div>
+  </footer>
+  
 
-            <a href="https://www.linkedin.com/in/waidon-cloete/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Waidon" target="_blank">GitHub</a>
-          </div>
-          <div class="footer-image">
-            <img src="./Images/Logo.png" alt="Placeholder Image" />
-          </div>
-        </div>
-      </footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+  // This script is for the smooth scrolling effect in the slider.
+  document.querySelectorAll(".slider").forEach((slider) => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  });
+
+  // Toggle mobile menu
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
+</script>
+
   
      
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <script>
-        // This script is for the smooth scrolling effect in the slider.
-        document.querySelectorAll(".slider").forEach((slider) => {
-          let isDown = false;
-          let startX;
-          let scrollLeft;
-  
-          slider.addEventListener("mousedown", (e) => {
-            isDown = true;
-            slider.classList.add("active");
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-          });
-  
-          slider.addEventListener("mouseleave", () => {
-            isDown = false;
-            slider.classList.remove("active");
-          });
-  
-          slider.addEventListener("mouseup", () => {
-            isDown = false;
-            slider.classList.remove("active");
-          });
-  
-          slider.addEventListener("mousemove", (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 3; //scroll-fast
-            slider.scrollLeft = scrollLeft - walk;
-          });
-        });
-  
-        // Toggle mobile menu
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
-  
-        menuToggle.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-          menuToggle.classList.toggle("active");
-        });
-      </script>
-    </body>
-  </html>
+      
+  </body>
+
+</html>
   

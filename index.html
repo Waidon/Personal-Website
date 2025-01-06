@@ -46,10 +46,10 @@
       <div class="about-container">
         <div class="about-image">
           <img
-            src="./Images/About Me.jpg"
+            src="./Images/About Me Image.jpg"
             alt="Waidon Cloete"
             height="500px"
-            width="500px";
+            width="500px"
           />
         </div>
         <div class="about-content">
@@ -178,7 +178,7 @@
         <p>
           <strong>Email:</strong>
           <br>
-          <a href="mailto:example@example.com">waidonj11@gmail.com</a>
+          <a href="mailto:waidonj11@gmail.com">waidonj11@gmail.com</a>
         </p>
       </div>
       <div class="footer-social">
@@ -193,6 +193,49 @@
     </div>
   </footer>
 
+    <script>
+      // This script is for the smooth scrolling effect in the slider.
+      // This script enables a smooth horizontal scrolling effect for the certification slider.
+      // It allows users to click and drag the slider to scroll through the certification cards.
+      // The script listens for mouse events to handle the dragging functionality.
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener("mousedown", (e) => {
+          isDown = true;
+          slider.classList.add("active");
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener("mouseleave", () => {
+          isDown = false;
+          slider.classList.remove("active");
+        });
+
+        slider.addEventListener("mouseup", () => {
+          isDown = false;
+          slider.classList.remove("active");
+        });
+
+        slider.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 3; //scroll-fast
+          slider.scrollLeft = scrollLeft - walk;
+        });
+
+      // Toggle mobile menu
+      const menu_Toggle = document.querySelector(".menu-toggle");
+      const nav_Links = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+    </script>
     <script src="script.js"></script>
     <script>
       // This script is for the smooth scrolling effect in the slider.

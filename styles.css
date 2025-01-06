@@ -60,15 +60,7 @@ p.drop-cap::first-letter {
         color: #00BFFF;
     
     }
-/*Portfolio*/
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
-    color: #333333;
-    box-sizing: border-box;
-}
+
 
 /* Portfolio Section */
 .portfolio {
@@ -164,7 +156,7 @@ h1 {
 /* Hero Section */
 
 .hero {
-    background-image: url('./Images/Hero\ Image.jpg'); 
+    background-image: url('./Images/Mountain\ Background.jpg'); 
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
@@ -180,7 +172,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    
     z-index: 1;
 }
 
@@ -195,6 +187,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 .hero p {
@@ -250,13 +243,7 @@ h1 {
     }
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-}
+
 
 /* Navigation Bar */
 .navbar {
@@ -381,13 +368,8 @@ body {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-}
+
+
 
 /* About Me Section */
 .about-me {
@@ -447,15 +429,6 @@ body {
 }
 
 /*About me section paragraphs*/
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
-    box-sizing: border-box;
-}
-
 h1 {
     font-size: 3rem;
     color: #00BFFF; /* Light blue color */
@@ -655,11 +628,8 @@ h1 {
     }
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
+
+
 
 /* Footer Section */
 .footer {
@@ -728,22 +698,11 @@ body {
     }
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-}
+
 
 /* Certification Slider Section */
 /* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-}
+
 
 /* Certifications Section */
 .certifications-section {
@@ -907,13 +866,6 @@ body {
     }
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #FFFFFF;
-}
 
 /* Skills Section */
 .skills-section {
@@ -927,6 +879,7 @@ body {
     color: #FFFFFF;
     margin-bottom: 40px;
     font-weight: 700;
+    
 }
 
 .skills-container {
@@ -999,14 +952,7 @@ body {
     }
 }
 
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #FFFFFF;
-    transition: background-color 0.5s ease-in-out;
-}
+
 
 /* Skills Section */
 .skills-section {
@@ -1089,19 +1035,12 @@ body {
 }
 
 /*About me section*/
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #000000;
-    box-sizing: border-box;
-}
+
 
 /* Hero Section Styles for about me */
 .hero-section {
     position: relative;
-    background: url('./Images/Aboutme.jpg') no-repeat center center/cover; /* Add your background image here */
+    background: url('./Images/About\ Hero\ Image.jpg') no-repeat center center/cover; /* Add your background image here */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -1129,6 +1068,7 @@ body {
     font-size: 3.5rem;
     margin-bottom: 20px;
     font-weight: 700;
+    color: #FFFFFF;
 }
 
 .hero-content p {
@@ -1181,17 +1121,9 @@ body {
     }
 }
 
-/*contact me page*/
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
-    color: #000000;
-    box-sizing: border-box;
-}
 
-/* Contact Section */
+
+
 .contact-section {
     padding: 50px 20px;
     background-color: #FFFFFF;
@@ -1278,6 +1210,8 @@ body {
         font-size: 1rem;
     }
 }
+
+
 
 
 
