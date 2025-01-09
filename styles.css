@@ -1246,6 +1246,19 @@ h1 {
 }
 
 
+/* copyright */
+
+#copyright {
+    
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 1rem;
+    background-color: #00BFFF;
+    font-weight: bold;
+   
+}
+
 /* Keyframes for Animations */
 @keyframes fadeInUp {
     0% {
