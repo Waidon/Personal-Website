@@ -163,6 +163,7 @@ h1 {
     text-align: center;
     padding: 100px 20px;
     position: relative;
+    box-shadow: #d3cfcf;
 }
 
 .hero::before {
@@ -181,6 +182,7 @@ h1 {
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+
 }
 
 .hero h1 {
@@ -195,18 +197,20 @@ h1 {
     margin-bottom: 30px;
 }
 
-.cta-button {
-    background-color: #FFFFFF;
-    color:#000000;
-    padding: 10px 20px;
+#hero-button  {
+    background-color: #000000;
+    color:#FFFFFF;
+    padding: 15px 20px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    box-shadow: #F5F5F5;
+    
 }
 
-.cta-button:hover {
-    background-color: #757575;
+#hero-button:hover {
+    background-color:#00BFFF;
 }
 
 /* Responsive Design */
@@ -416,7 +420,7 @@ h1 {
 #aboutmebutton {
     background-color: #000000;
     color: #FFFFFF; 
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
@@ -425,7 +429,7 @@ h1 {
 }
 
 #aboutmebutton:hover {
-    background-color: #757575; /* Darker hover effect */
+    background-color: #00BFFF
 }
 
 /*About me section paragraphs*/
@@ -486,6 +490,8 @@ h1 {
 }
 
 /* About Me Section */
+
+
 .about-me {
     padding: 50px 20px;
     background-color: #FFFFFF;
@@ -536,6 +542,13 @@ h1 {
     margin-bottom: 20px;
     text-align: justify;
     color: #333333;
+}
+
+/* About me second part */
+hr {
+    border: 1px solid #00BFFF;
+    margin-bottom: 20px;
+    max-width: 80%;
 }
 
 /* Responsive Design */
@@ -682,6 +695,12 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+h3 {
+    font-size: 2.5rem;
+    color: #00BFFF; /* Light Blue */
+    margin-bottom: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
@@ -701,7 +720,7 @@ h1 {
 
 
 /* Certification Slider Section */
-/* Global Styles */
+
 
 
 /* Certifications Section */
@@ -1078,19 +1097,7 @@ h1 {
     line-height: 1.6;
 }
 
-.cta-button {
-    padding: 12px 30px;
-    background-color: #00BFFF; /* Light Blue */
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
 
-.cta-button:hover {
-    background-color: #008CBA; /* Darker Blue */
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -1151,7 +1158,7 @@ h1 {
     color: #FFFFFF;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(143, 142, 142, 0.8);
     text-align: center;
     width: 100%;
     max-width: 400px;
@@ -1185,6 +1192,10 @@ h1 {
 
 .contact-card a:hover {
     text-decoration: underline;
+}
+
+.bi-linkedin:hover {
+    color: #F5F5F5;
 }
 
 /* Responsive Design */
