@@ -8,12 +8,13 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #FFFFFF;
+    width: 100%;
     padding: 10px 20px;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1000;
     color:#000000;
+   
 }
 
 .navbar-container {
@@ -28,13 +29,19 @@ body {
     font-weight: 700;
     text-decoration: none;
 }
+.brand a:hover {
+    color: #00BFFF;
+   
+    
+}
 
 .nav-links a {
     color: #000000;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 
@@ -156,14 +163,20 @@ h1 {
 /* Hero Section */
 
 .hero {
-    background-image: url('./Images/Mountain\ Background.jpg'); 
+    background-image: url('./Images/Ocean\ Image.jpg'); 
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
     text-align: center;
-    padding: 100px 20px;
+    padding: 20px 20px;
     position: relative;
     box-shadow: #d3cfcf;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .hero::before {
@@ -198,7 +211,7 @@ h1 {
 }
 
 #hero-button  {
-    background-color: #000000;
+    background-color:#00BFFF;
     color:#FFFFFF;
     padding: 15px 20px;
     text-decoration: none;
@@ -210,7 +223,7 @@ h1 {
 }
 
 #hero-button:hover {
-    background-color:#00BFFF;
+    background-color:#070707;
 }
 
 /* Responsive Design */
@@ -251,11 +264,15 @@ h1 {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #000000;
+    color: #FFFFFF;
     padding: 15px 20px;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1000;
+    list-style:none;
+    display: flex;
+    justify-content: flex-start;
+   
 }
 
 .navbar a {
@@ -267,7 +284,7 @@ h1 {
 }
 
 .navbar a:hover {
-    border-bottom: 2px solid #00BFFF;
+   
     padding-bottom: 3px; 
 }
 
@@ -284,6 +301,8 @@ h1 {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
+    padding-right: 10px;
+    margin: 10px;
 }
 
 .nav-links {
@@ -1060,8 +1079,8 @@ h3 {
 /* Hero Section Styles for about me */
 .hero-section {
     position: relative;
-    background: url('./Images/About\ Hero\ Image.jpg') no-repeat center center/cover; /* Add your background image here */
-    height: 100vh;
+    background: url('./Images/Mountain\ image.jpg') no-repeat center center/cover; /* Add your background image here */
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1097,7 +1116,30 @@ h3 {
     line-height: 1.6;
 }
 
+/*Hero section for contact page*/
+.hero-contact {
+    position: relative;
+    background: url('./Images/Contact\ page.jpg') no-repeat center center/cover; /* Add your background image here */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
 
+/*Hero section for portfolio page*/
+
+.hero-portfolio {
+    position: relative;
+    background: url('./Images/Portfolio\ Section.jpg') no-repeat center center/cover; /* Add your background image here */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -1150,6 +1192,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
+    padding: 5px;
 }
 
 /* Contact Cards */
@@ -1157,12 +1200,14 @@ h3 {
     background-color: #000000;
     color: #FFFFFF;
     border-radius: 10px;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 0 4px 8px rgba(143, 142, 142, 0.8);
     text-align: center;
-    width: 100%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 300px;
     transition: transform 0.3s ease;
+    margin: 10px;
+    
 }
 
 .contact-card:hover {
