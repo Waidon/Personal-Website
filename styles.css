@@ -910,6 +910,7 @@ h3 {
     background-color: #000000; /* Black background */
     padding: 60px 20px;
     text-align: center;
+    margin: auto;
 }
 
 .skills-section h2 {
