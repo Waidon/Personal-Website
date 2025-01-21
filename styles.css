@@ -931,7 +931,7 @@ h3 {
     background-color: #1a1a1a; /* Dark gray background for cards */
     border-radius: 15px;
     padding: 30px;
-    width: 250px;
+    width: 150px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
