@@ -7,13 +7,17 @@ body {
 }
 
 /* Navigation Bar */
+
 .navbar {
-    width: 100%;
-    padding: 10px 20px;
+    color: #FFFFFF;
+    padding: 15px 20px;
     position: absolute;
     top: 0;
     z-index: 1000;
-    color:#000000;
+    list-style:none;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
    
 }
 
@@ -36,7 +40,7 @@ body {
 }
 
 .nav-links a {
-    color: #000000;
+    color: #ffffff;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
@@ -48,6 +52,7 @@ body {
 .menu-toggle {
     display: none;
     cursor: pointer;
+  
 }
 
 .menu-toggle span {
@@ -195,7 +200,15 @@ h1 {
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+    
 
+}
+
+#hero-first-page {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -235,6 +248,11 @@ h1 {
     .hero p {
         font-size: 1rem;
     }
+
+    .hero-content {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 /* Responsive Design */
@@ -263,17 +281,7 @@ h1 {
 
 
 /* Navigation Bar */
-.navbar {
-    color: #FFFFFF;
-    padding: 15px 20px;
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    list-style:none;
-    display: flex;
-    justify-content: flex-start;
-   
-}
+
 
 .navbar a {
     text-decoration: none; 
@@ -326,11 +334,10 @@ h1 {
         padding-bottom: 5px; 
         border-bottom: 2px solid transparent; 
         transition: border-bottom 0.3s ease; 
-    
-    width:min-content;
- 
-        border-bottom: 2px solid #00BFFF;
+        width:min-content;
+        border-bottom: 1px solid #00BFFF;
         padding-bottom: 3px; 
+        border-width: 5px;
     
 }
 
@@ -356,7 +363,7 @@ h1 {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #000000;
+        background-color: transparent;
         position: absolute;
         top: 60px;
         left: 0;
@@ -1108,6 +1115,8 @@ h3 {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
+        padding-top: 50px;
+        
     }
 
     .hero-content p {
@@ -1116,6 +1125,15 @@ h3 {
 
     .cta-button {
         font-size: 0.9rem;
+    }
+    .hero-content {
+      margin-right: 80px;
+      margin-left: 80px;
+    
+    }
+    #hero-first-page {
+      margin-right: 115px;
+      margin-left: 80px;
     }
 }
 
@@ -1299,10 +1317,10 @@ h3 {
 
 @keyframes underline {
     0% {
-        width: 0;
+        width: 50%;
     }
     100% {
-        width: 50px;
+        width: 50%;
     }
 }
 
