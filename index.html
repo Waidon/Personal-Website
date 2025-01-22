@@ -196,6 +196,11 @@
         </div>
     </div>
   </footer>
+  <!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  ↑ Top
+</button>
+
   <div id="copyright">Copyright© 2025 Waidon Cloete</div>
 
 
@@ -284,6 +289,28 @@
         navLinks.classList.toggle("active");
         menuToggle.classList.toggle("active");
       });
+
+// Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show/Hide Button on Scroll
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
+});
+
+// Scroll to Top on Click
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+
     </script>
   </body>
 </html>

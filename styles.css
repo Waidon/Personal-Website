@@ -1325,3 +1325,36 @@ h3 {
 }
 
 
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00BFFF; /* Theme Blue */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+/* Show Button when Visible */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Hover Effects */
+.back-to-top:hover {
+    background-color: #006699; /* Darker Blue */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
