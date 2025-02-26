@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -39,7 +39,7 @@
     <section class="hero" >
       <div id="hero-first-page">
         <h1 class="hero-title">Welcome to My Personal Website</h1>
-        <p class="hero-subtitle">Discover my work and journey in web development.</p>
+        <p class="hero-subtitle" id="hero-text">Discover my work and journey in web development.</p>
         <button>
         <a href="./Portfolio.html" class="cta-button" id="hero-button">Learn More</a>
       </button>
@@ -315,7 +315,17 @@ backToTopButton.addEventListener("click", () => {
     });
 });
 
+//hero text
+var typed = new Typed("#hero-text", {
+    strings: ["Web Developer.", "Graphic Designer.", "Photographer."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+   
+});
+
 
     </script>
   </body>
 </html>
+  

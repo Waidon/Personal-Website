@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFFFFF;
     color: #000000;
+    scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -355,10 +356,7 @@ h1 {
     
 }
 
-button:hover {
-    background-color: #000000;
-    border: 1px solid #00BFFF;
-}
+
 
 #aboutmebutton {
     
@@ -387,11 +385,19 @@ button {
  
 }
 
+
 button:hover {
     background-color: #000000;
-    border: 1px solid #00BFFF;
+   
+    transform: scale(1.1);
+    
 }
 
+#hero-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
