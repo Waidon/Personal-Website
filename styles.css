@@ -497,18 +497,12 @@ button:hover {
 .about-me {
     background-color: #F5F5F5; 
     padding: 60px 20px;
+    scroll-behavior: smooth;
    
 
 }
 
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+
 
 .about-image img {
     width: 100%;
@@ -557,10 +551,7 @@ h1 {
 }
 
 /* About Me Section */
-.about-me {
-    padding: 50px 20px;
-    background-color: #FFFFFF;
-}
+
 
 .about-container {
     display: grid;
@@ -595,17 +586,6 @@ h1 {
 /* About Me Section */
 
 
-.about-me {
-    padding: 50px 20px;
-    background-color: #FFFFFF;
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .about-me-content {
     display: flex;
@@ -832,6 +812,7 @@ h3 {
     background-color: #F5F5F5;
     padding: 60px 20px;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .certifications-section h2 {
@@ -998,6 +979,7 @@ h3 {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out forwards;
+    scroll-behavior: smooth;
 }
 
 .skills-section h2 {
@@ -1223,6 +1205,7 @@ h3 {
     padding: 50px 20px;
     background-color: #FFFFFF;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .contact-section h1 {
@@ -1365,10 +1348,12 @@ h3 {
     0% {
         opacity: 0;
         transform: translateY(20px);
+        scroll-behavior: smooth;
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+        scroll-behavior: smooth;
     }
 }
 
@@ -1387,6 +1372,7 @@ h3 {
     0% {
         opacity: 0;
         transform: translateY(20px);
+        scroll-behavior: smooth;
     }
     100% {
         opacity: 1;
