@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
@@ -40,6 +42,9 @@
       <div id="hero-first-page">
         <h1 class="hero-title">Welcome to My Personal Website</h1>
         <p class="hero-subtitle" id="hero-text">Discover my work and journey in web development.</p>
+        <br/>
+        <br/>
+    
         <button>
         <a href="./Portfolio.html" class="cta-button" id="hero-button">Learn More</a>
       </button>
@@ -70,7 +75,7 @@
           <a href="./Contact.html" class="cta-button" id="aboutmebutton">Contact Me</a>
         </button>
         </div>
-        <div class="about-image">
+        <div class="about-image" data-aos="flip-left">
           <img
             src="./Images/About Me Image.jpg"
             alt="Waidon Cloete"
@@ -323,6 +328,10 @@ var typed = new Typed("#hero-text", {
     loop: true,
    
 });
+
+// Flipped image
+
+ AOS.init();
 
 
     </script>

@@ -637,9 +637,7 @@ h1 {
 
 /* About me second part */
 hr {
-    border: 1px solid #00BFFF;
-    margin-bottom: 20px;
-    max-width: 80%;
+    border: 0px ;
 }
 
 /* Responsive Design */
