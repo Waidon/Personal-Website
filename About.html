@@ -10,6 +10,9 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -68,7 +71,7 @@
               <li>Learn Responsive Web Development from Scratch - Udemy</li>
               <li>Responsive Website Basics: Code with HTML & CSS - University of London</li>
           </ul>
-          <div class="about-image">
+          <div class="about-image" data-aos="fade-right">
             <img src="./Images/About me first part.jpg" alt="About Me Image">
         </div>
           <p>
@@ -98,7 +101,7 @@
               <p>
                   Nature is a lifeline for humanity. The air we breathe, the water we drink, and the food we consume all come from the natural world. Trees and plants produce oxygen and help combat climate change, while oceans regulate temperatures and provide a habitat for diverse marine life. Animals contribute to the balance of ecosystems, and their well-being is directly linked to ours.
               </p>
-              <div class="about-me-image">
+              <div class="about-me-image" data-aos="fade-left">
                 <img src="./Images/Nature Image.jpg" alt="Nature Passion">
             </div>
               <p>
@@ -202,6 +205,9 @@ backToTopButton.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// Slide in images
+AOS.init();
 
     </script>
   </body>
