@@ -16,12 +16,10 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-
     <nav class="navbar">
       <div class="navbar-container">
         <div class="brand">
           <a href="./index.html">Waidon Cloete</a>
-          
         </div>
         <div class="nav-links">
           <a href="./index.html">Home</a>
@@ -38,17 +36,17 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero">
-  <div id="hero-first-page">
-    <h1 class="hero-title">Welcome to My Personal Website</h1>
-    <p class="hero-subtitle" id="hero-text">Discover my work and journey in web development.</p>
-   
-    <div class="button-container">
-      <a href="./Portfolio.html" class="cta-button" id="hero-button">Learn More</a>
-    </div>  
-  </div>
-  <div class="hero-overlay"></div>
-</section>
+    <section class="hero">
+      <div id="hero-first-page">
+        <h1 class="hero-title">Welcome to My Personal Website</h1>
+        <p class="hero-subtitle" id="hero-text">Discover my work and journey in web development.</p>
+        <div class="button-container">
+          <a href="./Portfolio.html" class="cta-button" id="hero-button">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
     <!-- About Me Section -->
     <section class="about-me">
       <div class="about-container">
@@ -79,42 +77,39 @@
         </div>
       </div>
     </section>
-     <!--Skills bar-->>
-  <section id="skills">
-    <h2>Web Development Skills</h2>
 
-    <div class="skill">
+    <!-- Skills Bar -->
+    <section id="skills">
+      <h2>Web Development Skills</h2>
+      <div class="skill">
         <p>HTML</p>
         <div class="skill-container">
-            <div class="skill-bar" data-width="90%">
-                <span class="skill-percent">90%</span>
-            </div>
+          <div class="skill-bar" data-width="90%">
+            <span class="skill-percent">90%</span>
+          </div>
         </div>
-    </div>
-
-    <div class="skill">
+      </div>
+      <div class="skill">
         <p>CSS</p>
         <div class="skill-container">
-            <div class="skill-bar" data-width="85%">
-                <span class="skill-percent">85%</span>
-            </div>
+          <div class="skill-bar" data-width="85%">
+            <span class="skill-percent">85%</span>
+          </div>
         </div>
-    </div>
-
-    <div class="skill">
+      </div>
+      <div class="skill">
         <p>JavaScript</p>
         <div class="skill-container">
-            <div class="skill-bar" data-width="75%">
-                <span class="skill-percent">75%</span>
-            </div>
+          <div class="skill-bar" data-width="75%">
+            <span class="skill-percent">75%</span>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- Skills Section -->
     <section class="skills-section">
       <h2>My Skills</h2>
-      
       <div class="skills-container">
         <div class="skill-card">
           <i class="fas fa-code"></i>
@@ -138,6 +133,7 @@
         </div>
       </div>
     </section>
+
     <!-- Certifications Section -->
     <section class="certifications-section">
       <h2>My Certifications</h2>
@@ -209,81 +205,33 @@
         </div>
       </div>
     </section>
-   <!-- Footer Section -->
-   <footer class="footer">
-    <div class="footer-container">
 
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
         <div class="footer-contact">
           <h3>Contact Me</h3>
-            <p><strong>Phone:</p> <p></strong>073 357 2537</p>
-            <p><strong>Email:</strong></p> <p>waidonj11@gmail.com</p>
-          
+          <p><strong>Phone:</strong> 073 357 2537</p>
+          <p><strong>Email:</strong> waidonj11@gmail.com</p>
         </div>
         <div class="footer-social">
           <h3>Connect with Me</h3>
-
-            <a href="https://www.linkedin.com/in/waidon-cloete/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/Waidon" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/waidon-cloete/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Waidon" target="_blank" rel="noopener">GitHub</a>
         </div>
         <div class="footer-image">
           <img src="./Images/Logo.png" alt="Placeholder Image" />
         </div>
-    </div>
-  </footer>
-  <!-- Back to Top Button -->
-<button id="backToTop" class="back-to-top" aria-label="Back to top">
-  ↑ Top
-</button>
+      </div>
+    </footer>
 
-  <div id="copyright">Copyright© 2025 Waidon Cloete</div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
+    <div id="copyright">Copyright© 2025 Waidon Cloete</div>
 
-
-    <script>
-      // This script is for the smooth scrolling effect in the slider.
-      // This script enables a smooth horizontal scrolling effect for the certification slider.
-      // It allows users to click and drag the slider to scroll through the certification cards.
-      // The script listens for mouse events to handle the dragging functionality.
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        slider.addEventListener("mousedown", (e) => {
-          isDown = true;
-          slider.classList.add("active");
-          startX = e.pageX - slider.offsetLeft;
-          scrollLeft = slider.scrollLeft;
-        });
-
-        slider.addEventListener("mouseleave", () => {
-          isDown = false;
-          slider.classList.remove("active");
-        });
-
-        slider.addEventListener("mouseup", () => {
-          isDown = false;
-          slider.classList.remove("active");
-        });
-
-        slider.addEventListener("mousemove", (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - slider.offsetLeft;
-          const walk = (x - startX) * 3; //scroll-fast
-          slider.scrollLeft = scrollLeft - walk;
-        });
-
-      // Toggle mobile menu
-      const menu_Toggle = document.querySelector(".menu-toggle");
-      const nav_Links = document.querySelector(".nav-links");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        menuToggle.classList.toggle("active");
-      });
-    </script>
     <script src="script.js"></script>
     <script>
-      // This script is for the smooth scrolling effect in the slider.
+      // Smooth scrolling effect for the certification slider
       document.querySelectorAll(".slider").forEach((slider) => {
         let isDown = false;
         let startX;
@@ -324,65 +272,59 @@
         menuToggle.classList.toggle("active");
       });
 
-// Back to Top Button
-const backToTopButton = document.getElementById("backToTop");
+      // Back to Top Button
+      const backToTopButton = document.getElementById("backToTop");
 
-// Show/Hide Button on Scroll
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        backToTopButton.classList.add("show");
-    } else {
-        backToTopButton.classList.remove("show");
-    }
-});
+      // Show/Hide Button on Scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
 
-// Scroll to Top on Click
-backToTopButton.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
-});
+      // Scroll to Top on Click
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
 
-//hero text
-var typed = new Typed("#hero-text", {
-    strings: ["Web Developer.", "Graphic Designer.", "Photographer."],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-   
-});
+      // Hero text animation
+      var typed = new Typed("#hero-text", {
+        strings: ["Web Developer.", "Graphic Designer.", "Photographer."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+      });
 
-// Flipped image
+      // Initialize AOS (Animate On Scroll)
+      AOS.init();
 
- AOS.init();
+      // Skills bar animation
+      document.addEventListener("DOMContentLoaded", function () {
+        let bars = document.querySelectorAll(".skill-bar");
 
-//Skills bar animation
-document.addEventListener("DOMContentLoaded", function () {
-    let bars = document.querySelectorAll(".skill-bar");
+        bars.forEach((bar) => {
+          let width = bar.getAttribute("data-width");
+          bar.style.width = width;
 
-    bars.forEach((bar) => {
-        let width = bar.getAttribute("data-width");
-        bar.style.width = width;
+          let percentText = bar.querySelector(".skill-percent");
+          let value = parseInt(width);
+          let counter = 0;
 
-        let percentText = bar.querySelector(".skill-percent");
-        let value = parseInt(width);
-        let counter = 0;
-
-        let interval = setInterval(() => {
+          let interval = setInterval(() => {
             if (counter >= value) {
-                clearInterval(interval);
+              clearInterval(interval);
             } else {
-                counter++;
-                percentText.textContent = counter + "%";
+              counter++;
+              percentText.textContent = counter + "%";
             }
-        }, 20);
-    });
-});
-
-
-
+          }, 20);
+        });
+      });
     </script>
   </body>
 </html>
-  
