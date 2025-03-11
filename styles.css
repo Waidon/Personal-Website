@@ -378,6 +378,7 @@ h1 {
     display: inline-block;
     padding: 20px 25px;
     font-size: 16px;
+    font-weight: bold;
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -385,18 +386,24 @@ h1 {
     cursor: pointer;
     background-color: #00BFFF;
     color: #FFFFFF;
-    font-weight: 200;
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
-   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ 
    
   }
   
   .cta-button:hover {
-    background-color: #000000;
-    color: #FFFFFF;
-    scale: 1.1;
+    background-color: #000000; /* Darker blue for hover */
+    transform: scale(1.05); /* Slightly larger size */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+  }
+
+  .cta-button:active {
+    background-color: #7ba5cf; /* Even darker for active state */
+    transform: translateY(0); /* Reset lift */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
   }
 
   .button-container {
@@ -1515,5 +1522,5 @@ h3 {
 }
 #backToTop {
     
-    margin-right: 30px;
+    margin-right: 10px;
 }
