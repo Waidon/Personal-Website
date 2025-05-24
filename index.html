@@ -75,25 +75,25 @@
       </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="brand">
-          <a href="./index.html">Waidon Cloete</a>
-        </div>
-        <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./About.html">About</a>
-          <a href="./Portfolio.html">Portfolio</a>
-          <a href="./Contact.html">Contact</a>
-        </div>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+ <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="brand">
+      <a href="./index.html">Waidon Cloete</a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./Portfolio.html">Portfolio</a>
+      <a href="./Contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -311,12 +311,12 @@
       });
 
       // Toggle mobile menu
-      const toggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+       menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+     });
 
       // Back to Top Button
       const backToTopButton = document.getElementById("backToTop");
