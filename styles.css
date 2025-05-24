@@ -20,15 +20,18 @@ body {
     justify-content: flex-start;
     width: 90%;
     margin: 10px;
+  
     
    
 }
 
+  
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .brand a {
     color: #ffffff;
@@ -174,6 +177,39 @@ body {
     background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      width: 200px;
+      padding: 20px;
+      z-index: 999;
+      border-radius: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  .nav-links {
+    transition: all 0.3s ease;
+  }
 
 p.drop-cap::first-letter {
         font-size: 3em;
@@ -252,6 +288,16 @@ h1 {
     color: #1E1E1E;
     padding: 0 20px 20px;
     line-height: 1.5;
+}
+
+.port-item {
+    text-decoration: none   ;
+}
+
+.port-item:hover {
+    box-shadow:#B5CDA3;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Responsive Design */
@@ -1007,14 +1053,9 @@ h3 {
 }
 
 .skills-section h2::after {
-    content: '';
     display: block;
     height: 4px;
-    background:#B5CDA3;
-    margin: 0 auto;
-    animation: underline 0.8s ease-in-out forwards;
-    
-    
+    margin: 0 auto; 
 }
 
 .skills-container {
@@ -1025,7 +1066,7 @@ h3 {
 }
 
 .skill-card {
-    background-color: #1a1a1a; /* Dark gray background for cards */
+    background-color: #1E1E1E;
     border-radius: 15px;
     padding: 30px;
     width: 250px;
@@ -1038,7 +1079,13 @@ h3 {
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(202, 226, 116, 0.3);
+    background-color: #B5CDA3;
+    color: #1E1E1E;
+}
+
+.skill-card:hover i {
+    color: #ffffff; /* Darker green on hover */
 }
 
 .skill-card i {

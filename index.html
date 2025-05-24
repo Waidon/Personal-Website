@@ -103,7 +103,7 @@
       </video>
       <div id="hero-first-page">
         <h1 class="hero-title">Welcome to My Personal Website</h1>
-        <p class="hero-subtitle" id="hero-text">Discover my work and journey in web development.</p>
+        <p class="hero-subtitle" id="hero-text">Discover my work and journey in Information Technology.</p>
         <div class="button-container">
           <a href="./Portfolio.html" class="cta-button" id="hero-button">Learn More</a>
         </div>
@@ -147,6 +147,7 @@
     <!-- Skills Section -->
     <section class="skills-section">
       <h2>My Skills</h2>
+      
       <div class="skills-container">
         <div class="skill-card">
           <i class="fas fa-code"></i>
@@ -246,7 +247,7 @@
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-nav">
-          <a href="./About.html">Home</a>
+          <a href="./index.html">Home</a>
           <a href="./About.html">About</a>
           <a href="./Portfolio.html">Portfolio</a>
           <a href="./Contact.html">Contact</a>
@@ -310,13 +311,12 @@
       });
 
       // Toggle mobile menu
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
+      const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        menuToggle.classList.toggle("active");
-      });
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 
       // Back to Top Button
       const backToTopButton = document.getElementById("backToTop");
@@ -338,16 +338,12 @@
         });
       });
 
-      // Hero text animation
-      var typed = new Typed("#hero-text", {
-        strings: ["Web Developer.", "Graphic Designer.", "Photographer.", "Tech Enthusiast."],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-      });
+    
 
       // Initialize AOS (Animate On Scroll)
       AOS.init();
+
+
 
     </script>
   </body>
