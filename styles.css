@@ -300,8 +300,8 @@ h1 {
 
 #hero-text {
     font-size: 24px;
-    font-weight: bold;
     color:#ffffff;
+    font-style: italic;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
