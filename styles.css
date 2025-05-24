@@ -223,12 +223,21 @@ h1 {
     height: 80vh;
     align-items: center;
     justify-content: center;
-    text-align: center;
     width: 100%;
     padding-top: 50px;
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
+    
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark layer */
+  z-index: 1;
 }
 
 .hero-video {
@@ -281,6 +290,7 @@ h1 {
     justify-content: center;
     height: 100vh; /* Full height */
     text-align: center;
+    padding-left: 20px;
     
 }
 
@@ -303,6 +313,8 @@ h1 {
     color:#ffffff;
     font-style: italic;
 }
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
@@ -316,6 +328,12 @@ h1 {
     .hero-content {
         width: 50%;
         margin: auto;
+    }
+
+    #hero-button {
+        font-size: 1rem;
+        padding: 20px 15px;
+        border-radius: 10px;
     }
 }
 
@@ -331,7 +349,6 @@ h1 {
     cursor: pointer;
     background-color: #B5CDA3; /* Light blue */
     color: #FFFFFF;
-    font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     
   }
@@ -353,6 +370,8 @@ h1 {
     display: flex;
     justify-content: center;
   }
+
+
     
 
 
@@ -975,16 +994,11 @@ h3 {
     justify-content: center;
     text-align: center;
     color: #FFFFFF;
+    
+
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-}
+
 
 .hero-content {
     z-index: 1; /* Ensures content is above the overlay */
