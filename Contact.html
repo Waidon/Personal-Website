@@ -76,27 +76,25 @@
       </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="brand">
-          <a href="./index.html">Waidon Cloete</a>
-          
-        </div>
-        <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./About.html">About</a>
-          <a href="./Portfolio.html">Portfolio</a>
-          <a href="./Contact.html">Contact</a>
-        </div>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+   <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="brand">
+      <a href="./index.html">Waidon Cloete</a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./About.html">About</a>
+      <a href="./Portfolio.html">Portfolio</a>
+      <a href="./Contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
     <!-- Hero Section -->
   <section class="hero-contact">
     <div class="hero-content">
@@ -202,74 +200,76 @@
 
 
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script>
-  // This script is for the smooth scrolling effect in the slider.
-  document.querySelectorAll(".slider").forEach((slider) => {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+<script src="script.js"></script>
+    <script>
+      // Smooth scrolling effect for the certification slider
+      document.querySelectorAll(".slider").forEach((slider) => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
 
-    slider.addEventListener("mousedown", (e) => {
-      isDown = true;
-      slider.classList.add("active");
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-    });
+        slider.addEventListener("mousedown", (e) => {
+          isDown = true;
+          slider.classList.add("active");
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
 
-    slider.addEventListener("mouseleave", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
+        slider.addEventListener("mouseleave", () => {
+          isDown = false;
+          slider.classList.remove("active");
+        });
 
-    slider.addEventListener("mouseup", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
+        slider.addEventListener("mouseup", () => {
+          isDown = false;
+          slider.classList.remove("active");
+        });
 
-    slider.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 3; //scroll-fast
-      slider.scrollLeft = scrollLeft - walk;
-    });
-  });
+        slider.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 3; //scroll-fast
+          slider.scrollLeft = scrollLeft - walk;
+        });
+      });
 
-  // Toggle mobile menu
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+      // Toggle mobile menu
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    menuToggle.classList.toggle("active");
-  });
+       menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+     });
 
-  
-// Back to Top Button
-const backToTopButton = document.getElementById("backToTop");
+      // Back to Top Button
+      const backToTopButton = document.getElementById("backToTop");
 
-// Show/Hide Button on Scroll
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        backToTopButton.classList.add("show");
-    } else {
-        backToTopButton.classList.remove("show");
-    }
-});
+      // Show/Hide Button on Scroll
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
 
-// Scroll to Top on Click
-backToTopButton.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
-});
+      // Scroll to Top on Click
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
 
-</script>
+    
 
-  
-     
-      
+      // Initialize AOS (Animate On Scroll)
+      AOS.init();
+
+
+
+    </script>
   </body>
 
 </html>

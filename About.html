@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waidon Cloete's Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
       .site-footer {
         background-color: #0f0f0f;
@@ -72,24 +76,24 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="brand">
-          <a href="./index.html">Waidon Cloete</a>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="brand">
+            <a href="./index.html">Waidon Cloete</a>
+          </div>
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links" id="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Portfolio.html">Portfolio</a>
+            <a href="./Contact.html">Contact</a>
+          </div>
         </div>
-        <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./About.html">About</a>
-          <a href="./Portfolio.html">Portfolio</a>
-          <a href="./Contact.html">Contact</a>
-        </div>
-        <div class="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -112,7 +116,7 @@
           </p>
           <p>
             As a teenager, my curiosity for computers only deepened. I began teaching myself about hardware, software, and the fundamentals of technology. After completing high school, I realized that this passion could become a career. I started furthering my knowledge in 2021 by enrolling at <strong>Damelin College</strong>, where I earned a <strong>Further Education and Training Certificate: Information Technology: Technical Support</strong>. This qualification gave me a solid foundation in IT principles and strengthened my resolve to build a career in this field.
-            <span style='font-size:20px;'>&#128640;</span></p>
+            <span>&#128640;</span></p>
           <p>
             While I enjoyed learning about IT support, I discovered a growing interest in <strong>web development</strong>—a field that allowed me to combine two of my favorite things: creating and building. Eager to explore this passion, I began diving into courses that helped me refine my skills. Over time, I’ve completed multiple certifications, including:
           </p>
@@ -129,7 +133,7 @@
           </div>
           <p>
             My journey is far from over. I am currently pursuing further studies at <strong>Boston City Campus</strong>, where I’m working towards a qualification in <strong>Systems Development</strong>. This program allows me to build on my technical knowledge while enhancing my ability to create dynamic, user-friendly web solutions.
-            <span style='font-size:20px;'>&#127760;</span></p>
+            <span>&#127760;</span></p>
           <p>
             I remain committed to lifelong learning, constantly seeking new opportunities to grow and refine my skills. Whether it’s taking apart a computer, building a responsive website, or designing innovative solutions, my goal is to combine creativity and technology to make a lasting impact.
           </p>
@@ -147,7 +151,7 @@
           <div class="about-me-text">
             <p class="drop-cap">
               From a young age, I have always had a fascination with nature, including the ocean, plants, trees, and animals. I strongly believe in the importance of preserving and prolonging the life of nature. It’s not just about the beauty it provides but also its critical role in supporting all forms of life, including humans.
-              <span style='font-size:20px;'>&#127793;</span></p>
+              <span>&#127793;</span></p>
             <p>
               Nature is a lifeline for humanity. The air we breathe, the water we drink, and the food we consume all come from the natural world. Trees and plants produce oxygen and help combat climate change, while oceans regulate temperatures and provide a habitat for diverse marine life. Animals contribute to the balance of ecosystems, and their well-being is directly linked to ours.
             </p>
@@ -200,7 +204,7 @@
 
     <script src="script.js"></script>
     <script>
-      // Smooth scrolling effect in the slider
+      // Smooth scrolling effect for the certification slider
       document.querySelectorAll(".slider").forEach((slider) => {
         let isDown = false;
         let startX;
@@ -233,13 +237,12 @@
       });
 
       // Toggle mobile menu
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
 
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        menuToggle.classList.toggle("active");
-      });
+       menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+     });
 
       // Back to Top Button
       const backToTopButton = document.getElementById("backToTop");
@@ -261,8 +264,13 @@
         });
       });
 
-      // Slide in images
+    
+
+      // Initialize AOS (Animate On Scroll)
       AOS.init();
+
+
+
     </script>
   </body>
 </html>
