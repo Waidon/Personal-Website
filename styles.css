@@ -14,10 +14,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #000; /* Solid black */
-    color: #fff;
+    color: #B5CDA3;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
   }
   
   .navbar-container {
@@ -30,7 +29,7 @@ body {
   }
   
   .brand a {
-    color: #fff;
+    color: #B5CDA3;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -42,15 +41,15 @@ body {
   }
   
   .nav-links a {
-    color: #fff;
+    color: #B5CDA3;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #B5CDA3;
+    color: #265C3D;
     text-transform: uppercase;
   }
   
@@ -58,6 +57,8 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: #B5CDA3;
+    background-color: #B5CDA3;;
   }
   
   .menu-toggle span {
