@@ -57,14 +57,13 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    color: #B5CDA3;
-    background-color: #B5CDA3;;
+    
   }
   
   .menu-toggle span {
     height: 3px;
     width: 25px;
-    background: #fff;
+    background: #B5CDA3;
     margin: 4px 0;
     transition: all 0.3s ease;
   }
