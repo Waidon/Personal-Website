@@ -10,8 +10,8 @@ body {
 /* Navigation Bar */
 
 .navbar {
-    color: #00BFFF;
-    padding: 15px 20px;
+    color: #ffffff;
+    padding: 20px 20px;
     position: absolute;
     top: 0;
     z-index: 1000;
@@ -19,6 +19,8 @@ body {
     display: flex;
     justify-content: flex-start;
     width: 90%;
+    margin: 10px;
+    
    
 }
 
@@ -29,20 +31,20 @@ body {
 }
 
 .brand a {
-    color: #00BFFF;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
 }
 .brand a:hover {
-    color: #00BFFF;
+    color: #B5CDA3
    
     
 }
 
 
 .nav-links a {
-    color: #00BFFF;
+    color: #ffffff;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 400;
@@ -53,10 +55,10 @@ body {
 
 .navbar a {
     text-decoration: none; 
-    color: #00BFFF;
+    color: #ffffff;
     padding-bottom: 5px; 
     border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.3s ease; 
+   
 }
 
 .navbar a:hover {
@@ -73,7 +75,7 @@ body {
 }
 
 .brand a {
-    color: #00BFFF;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -87,7 +89,7 @@ body {
 }
 
 .nav-links a {
-    color: #00BFFF;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s ease;
@@ -100,9 +102,7 @@ body {
         color: #FFFFFF;
         padding-bottom: 5px; 
         border-bottom: 2px solid transparent; 
-        transition: border-bottom 0.3s ease; 
         width:min-content;
-        border-bottom: 1px solid #00BFFF;
         padding-bottom: 3px; 
         border-width: 5px;
     
@@ -110,13 +110,11 @@ body {
 
 .navbar a {
     text-decoration: none; 
-    color: #00BFFF;
+    color: #ffffff;
     padding-bottom: 5px; 
     border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.3s ease; 
 }
 .navbar a:hover {
-   
     padding-bottom: 3px; 
 }
 
@@ -129,7 +127,7 @@ body {
 }
 
 .brand a {
-    color: #00BFFF;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -143,7 +141,7 @@ body {
 }
 
 .nav-links a {
-    color: #00BFFF;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s ease;
@@ -153,16 +151,12 @@ body {
     text-shadow: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none; 
-    color: #FFFFFF;
+    color: #B5CDA3;
     padding-bottom: 5px; 
     border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.3s ease; 
     width:min-content;
-    border-bottom: 1px solid #00BFFF;
     padding-bottom: 3px; 
     border-width: 5px;
- 
-    
 }
 
 
@@ -186,12 +180,12 @@ p.drop-cap::first-letter {
         float: left;
         margin-right: 10px;
         line-height: 1;
-        color: #00BFFF;
-    
+        color: #1E1E1E;
     }
 
 
 /* Portfolio Section */
+
 .portfolio {
     padding: 50px 20px;
     background-color: #FFFFFF;
@@ -205,20 +199,20 @@ p.drop-cap::first-letter {
 
 h1 {
     font-size: 3rem;
-    color: #00BFFF;
+    color: #ffffff;
 }
 
 .underline {
     width: 100px;
     height: 4px;
-    background-color: #00BFFF;
+    background-color: #B5CDA3;
     margin: 10px auto 30px;
     border-radius: 2px;
 }
 
 .intro-text {
     font-size: 1.2rem;
-    color: #333;
+    color: #1E1E1E;
     margin-bottom: 40px;
     line-height: 1.6;
 }
@@ -249,13 +243,13 @@ h1 {
 
 .portfolio-item h2 {
     font-size: 1.5rem;
-    color: #00BFFF;
+    color: #B5CDA3;
     margin: 20px 0 10px;
 }
 
 .portfolio-item p {
     font-size: 1rem;
-    color: #333333;
+    color: #1E1E1E;
     padding: 0 20px 20px;
     line-height: 1.5;
 }
@@ -285,10 +279,8 @@ h1 {
 /* Hero Section for about me */
 
 .hero {
-    background-image: url('./Images/Ocean\ Image.jpg'); 
-    background-size: cover;
     background-position: center;
-    color: #00BFFF;
+    color: #ffffff;
     text-align: center;
     padding: 20px 20px;
     position: relative;
@@ -299,7 +291,26 @@ h1 {
     text-align: center;
     width: 100%;
     padding-top: 50px;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5); /* dim it so text is readable */
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(20px); }
+  }
 
 .hero::before {
     content: '';
@@ -343,18 +354,19 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #00BFFF;
+    color: #ffffff;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color:#00BFFF;
 }
 
 #hero-text {
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color:#ffffff;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -382,18 +394,18 @@ h1 {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #00BFFF;
+    background-color: #B5CDA3; /* Light blue */
     color: #FFFFFF;
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+    
  
    
   }
   
   .cta-button:hover {
-    background-color: #000000; /* Darker blue for hover */
+    background-color: #265C3D; /* Darker blue for hover */
     transform: scale(1.05); /* Slightly larger size */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
   }
@@ -410,13 +422,6 @@ h1 {
     justify-content: center;
   }
     
-@media (max-width: 480px) {
-    .cta-button {
-        padding: 15px 20px;
-        font-size: 20px;
-        padding: 30px 35px;
-    }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -464,7 +469,6 @@ h1 {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
         background-color: transparent;
         position: absolute;
         top: 60px;
@@ -487,95 +491,9 @@ h1 {
     }
 }
 
-/* Mobile Menu Animation */
-.menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
 
-.menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* Skills Section */
-#skills {
-    width: 80%;
-    margin: 50px auto;
-    text-align: center;
-    background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
-    height: 100vh; /* Full screen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 50px 20px;
-    color: white; /* Ensures text is visible */
-    
-
-}
-
-/* Skill Bar Containers */
-.skill {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Skill Title */
-.skill p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-}
-
-#skills h2{
-    color: #00BFFF;
-    font-size: 2.5rem;
-}
-
-/* Skill Bar Background */
-.skill-container {
-    background: rgba(255, 255, 255, 0.2);
-    height: 12px;
-    width: 100%;
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Animated Skill Bar */
-.skill-bar {
-    height: 100%;
-    width: 0; /* Initially 0 */
-    background: linear-gradient(90deg, #6be0d7,#00BFFF);
-    transition: width 2s ease-in-out;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-right: 10px;
-}
-
-/* Skill Percentage Text */
-.skill-percent {
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-/* Hover Effect */
-.skill:hover .skill-bar {
-    filter: brightness(1.2);
-}
-
-/* Animation for Text */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 
 
 
@@ -586,10 +504,8 @@ h1 {
     background-color: #F5F5F5; 
     padding: 60px 20px;
     scroll-behavior: smooth;
-   
 
 }
-
 
 
 .about-image img {
@@ -609,7 +525,7 @@ h1 {
 .about-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #000000;
+    color: #265C3D;
     margin-bottom: 20px;
 }
 
@@ -617,7 +533,7 @@ h1 {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #757575; /* Gray text for body */
+    color: #1E1E1E;
 }
 
 
@@ -625,7 +541,7 @@ h1 {
 /*About me section paragraphs*/
 h1 {
     font-size: 3rem;
-    color: #00BFFF; /* Light blue color */
+    color: #265C3D;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -633,7 +549,7 @@ h1 {
 .underline {
     width: 100px;
     height: 4px;
-    background-color: #00BFFF;
+    background-color: #B5CDA3;
     margin: 0 auto 20px;
     border-radius: 2px;
 }
@@ -650,9 +566,9 @@ h1 {
     margin: 0 auto;
 }
 
-.about-text {
+.about-text p {
     text-align: justify;
-    color: #333;
+    color: #1E1E1E
 }
 
 .about-text ul {
@@ -697,14 +613,14 @@ h1 {
 
 .about-me-text h1 {
     font-size: 3rem;
-    color: #00BFFF;
+
     margin-bottom: 10px;
 }
 
 .underline {
     width: 100px;
     height: 4px;
-    background-color: #00BFFF;
+    background-color: #B5CDA3;
     margin-bottom: 20px;
     border-radius: 2px;
 }
@@ -838,16 +754,28 @@ hr {
 }
 
 .footer-contact h3, .footer-social h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .footer-contact p, .footer-social a {
-    font-size: 1rem;
+    font-size: 0.5rem;
     margin-bottom: 10px;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.footer-contact p {
+    font-size: 0.4rem;
+    color: #FFFFFF; /* White text */
+}
+
+@media (min-width: 480px) {
+    
+    .footer-contact p, .footer-social a {
+        font-size: 1.2rem;
+    }
 }
 
 .footer-social a {
@@ -903,7 +831,7 @@ h3 {
 
 .certifications-section h2 {
     font-size: 2.5rem;
-    color: #000000;
+    color: #265C3D;
     margin-bottom: 40px;
     font-weight: 700;
     
@@ -975,7 +903,7 @@ h3 {
 
 .more-link {
     font-size: 1rem;
-    color: #00BFFF; /* Light Blue */
+    color: #B5CDA3;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: color 0.3s ease, border-bottom 0.3s ease;
@@ -983,7 +911,7 @@ h3 {
 
 .more-link:hover {
     color: #FFFFFF;
-    border-bottom: 2px solid #00BFFF;
+    border-bottom: 2px solid #265C3D;
 }
 
 /* Responsive Design */
@@ -1059,7 +987,7 @@ h3 {
 
 /* Skills Section */
 .skills-section {
-    background-color: #000000; /* Black background */
+    background-color: #FFFFFF;
     padding: 60px 20px;
     text-align: center;
     opacity: 0;
@@ -1070,7 +998,7 @@ h3 {
 
 .skills-section h2 {
     font-size: 2.5rem;
-    color: #FFFFFF;
+    color: #265C3D;
     margin-bottom: 40px;
     font-weight: 700;
     position: relative;
@@ -1082,7 +1010,7 @@ h3 {
     content: '';
     display: block;
     height: 4px;
-    background: #00BFFF; /* Light Blue */
+    background:#B5CDA3;
     margin: 0 auto;
     animation: underline 0.8s ease-in-out forwards;
     
@@ -1115,7 +1043,7 @@ h3 {
 
 .skill-card i {
     font-size: 2.5rem;
-    color: #00BFFF; /* Light Blue icons */
+    color: #B5CDA3;
     margin-bottom: 20px;
     opacity: 0;
     transform: scale(0.8);
@@ -1254,10 +1182,7 @@ h3 {
         font-size: 1.2rem;
     }
 
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -1295,7 +1220,7 @@ h3 {
 
 .contact-section h1 {
     font-size: 3rem;
-    color: #00BFFF; /* The blue color */
+    color: #265C3D;
     margin-bottom: 40px;
 }
 
@@ -1329,7 +1254,7 @@ h3 {
 
 .contact-card i {
     font-size: 3rem;
-    color: #00BFFF; /* The blue color for icons */
+    color: #B5CDA3;
     margin-bottom: 15px;
 }
 
@@ -1344,7 +1269,7 @@ h3 {
 }
 
 .contact-card a {
-    color: #00BFFF;
+    color: #B5CDA3;
     text-decoration: none;
 }
 
@@ -1490,7 +1415,7 @@ h3 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00BFFF; /* Theme Blue */
+    background-color: #B5CDA3; /* Theme Blue */
     color: white;
     border: none;
     border-radius: 50px;
@@ -1515,7 +1440,7 @@ h3 {
 
 /* Hover Effects */
 .back-to-top:hover {
-    background-color: #68b6dd; /* Darker Blue */
+    background-color: #265C3D; /* Darker Blue */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 #backToTop {
