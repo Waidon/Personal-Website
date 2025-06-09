@@ -97,6 +97,7 @@
   </div>
 </nav>
 
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="overlay"></div>
@@ -104,13 +105,15 @@
         <source src="./Images/2474616-uhd_3840_2160_24fps.mp4" type="video/mp4" />
         
       </video>
-      <div id="hero-first-page">
-        <h1 class="hero-title">Hello, I'm Waidon </h1>
+      <div id="hero-first-page" class="tilt-box" >
+        <h1 class="hero-title ">Hello, I'm Waidon </h1>
         <p class="hero-subtitle" id="hero-text">I'm passionate about learning and exploring the ever-evolving world of technology.</p>
         
           <a href="./Portfolio.html" class="cta-button" id="hero-button">View My Work</a>
-        
+        </div>
     </section>
+    <div class="scroll-indicator">↓ Scroll Down</div>
+    
 
     <!-- About Me Section -->
     <section class="about-me">
@@ -131,12 +134,13 @@
             </p>
           <a href="./Contact.html" class="cta-button" id="aboutmebutton">Contact Me</a>
         </div>
-        <div class="about-image" data-aos="slide-up">
+        <div class="about-image floating-icon" data-aos="slide-up">
           <img
             src="./Images/About Me Image.jpg"
             alt="Waidon Cloete"
             height="500px"
             width="500px"
+            
           />
         </div>
       </div>
@@ -343,6 +347,17 @@
      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+
   </script>
+ <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2"></script>
+<script>
+  VanillaTilt.init(document.querySelector(".tilt-box"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
+  });
+</script>
+
   </body>
 </html>
