@@ -9,6 +9,7 @@ body {
 }
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
 /* Navigation Bar */
@@ -214,13 +215,13 @@ h1 {
 /* Hero Section for about me */
 
 .hero {
-    background-position: center;
+    
     color: #ffffff;
     text-align: center;
     padding: 20px 20px;
     position: relative;
     display: flex;
-    height: 80vh;
+    height:100vh;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -228,35 +229,21 @@ h1 {
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
-    
+    background-image: url('./Images/Coding\ Image.jpg');
+    background-size: cover;  
 }
 
-.tilt-box {
-  display: inline-block;
-  padding: 2rem;
-  border-radius: 20px;
-  transition: transform 0.2s ease-in-out;
-}
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark layer */
+  background-color: rgba(10, 10, 10, 0.6); /* Dark layer */
   z-index: 1;
 }
 
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    filter: brightness(0.5); /* dim it so text is readable */
-  }
 
   @keyframes fadeIn {
     to { opacity: 1; transform: translateY(0); }
@@ -330,7 +317,7 @@ h1 {
 }
 
 #hero-text {
-    font-size: 24px;
+    font-size: 20px;
     color:#ffffff;
     font-style: italic;
 }
@@ -1016,14 +1003,14 @@ h3 {
 /* Hero Section Styles for about me */
 .hero-section {
     position: relative;
-    background: url('./Images/Mountain\ image.jpg') no-repeat center center/cover; /* Add your background image here */
+    background: url('./Images/Wind\ Turbines.jpg')   no-repeat center center/cover; /* Add your background image here */
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #FFFFFF;
-    
+   
 
 }
 
@@ -1051,7 +1038,7 @@ h3 {
 /*Hero section for contact page*/
 .hero-contact {
     position: relative;
-    background: url('./Images/Contact\ page.jpg') no-repeat center center/cover; /* Add your background image here */
+    background: url('./Images/Laptop\ and\ Smartphone.jpg') no-repeat center center/cover; /* Add your background image here */
     height: 80vh;
     display: flex;
     align-items: center;
@@ -1064,7 +1051,7 @@ h3 {
 
 .hero-portfolio {
     position: relative;
-    background: url('./Images/Portfolio\ Section.jpg') no-repeat center center/cover; /* Add your background image here */
+    background: url('./Images/Motherboard\ Image.jpg') no-repeat center center/cover; /* Add your background image here */
     height: 80vh;
     display: flex;
     align-items: center;
