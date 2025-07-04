@@ -42,6 +42,11 @@ span {
     font-weight: 700;
     text-decoration: none;
   }
+
+.brand a:hover {
+        color: #265C3D; /* Darker green on hover */
+        text-decoration: none;
+    }
   
   .nav-links {
     display: flex;
@@ -288,20 +293,6 @@ h1 {
     
 }
 
-.scroll-indicator {
-  animation: bounce 2s infinite;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  color: #B5CDA3;
-  font-weight: 600;
-
-
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
-}
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
@@ -322,14 +313,7 @@ h1 {
     font-style: italic;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
 
-.floating-icon {
-  animation: float 3s ease-in-out infinite;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -348,8 +332,8 @@ h1 {
 
     #hero-button {
         font-size: 1rem;
-        padding: 20px 15px;
-        border-radius: 10px;
+        padding: 15px 15px;
+        border-radius: 15px;
     }
 }
 
@@ -425,7 +409,7 @@ h1 {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #1E1E1E;
+    color: #265C3D;
 }
 
 
@@ -460,17 +444,35 @@ h1 {
 
 .about-text p {
     text-align: justify;
-    color: #1E1E1E
+    color: #265C3D;
 }
 
 .about-text ul {
     margin-top: 20px;
     padding-left: 20px;
     list-style-type: disc;
+    color: #265C3D;
 }
 
 .about-text ul li {
     margin-bottom: 10px;
+}
+
+.about-me ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-me ul li::before {
+    content: "✅"; /* Bullet point */
+    color: #B5CDA3; /* Green color for bullet */
+    margin-right: 8px; /* Space between bullet and text */
+}
+
+.about-me ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
 }
 
 .about-text p {
@@ -522,7 +524,7 @@ h1 {
     line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify;
-    color: #333333;
+    color: #265C3D;
 }
 
 /* About me second part */
@@ -931,7 +933,7 @@ h3 {
 }
 
 .skill-card:hover i {
-    color: #ffffff; /* Darker green on hover */
+    color: #265C3D; /* Darker green on hover */
 }
 
 .skill-card i {
