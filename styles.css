@@ -321,11 +321,13 @@ h1 {
     margin: auto;
   }
 
-  #hero-button {
+  #hero-button{
+    padding: 20px 20px;
     font-size: 1rem;
-    padding: 15px 15px;
-    border-radius: 15px;
+    font-weight: bold;
   }
+
+ 
 }
 
 .cta-button {
