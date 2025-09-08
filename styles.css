@@ -477,16 +477,6 @@ h1 {
   box-shadow: 0 4px 8px rgba(110, 109, 109, 0.8);
 }
 
-.about-me-text {
-  flex: 1;
-  margin-left: 30px;
-}
-
-.about-me-text h1 {
-  font-size: 3rem;
-
-  margin-bottom: 10px;
-}
 
 .underline {
   width: 100px;
@@ -496,13 +486,7 @@ h1 {
   border-radius: 2px;
 }
 
-.about-me-text p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-align: justify;
-  color: #265c3d;
-}
+
 
 /* About me second part */
 hr {
@@ -516,17 +500,7 @@ hr {
     text-align: center;
   }
 
-  .about-me-text {
-    margin-left: 0;
-  }
-
-  .about-me-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .about-me-text p {
-    font-size: 1rem;
-  }
+  
 }
 
 /* Responsive Design */
